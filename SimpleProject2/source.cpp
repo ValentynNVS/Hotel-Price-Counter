@@ -11,10 +11,41 @@
 #include <string.h>
 #include <stdlib.h>
 
+
+const int kErrorValue = -1;
+const int kNumberOfPeople = 4;
+const int kStringSize = 100;
+
+double calculateCostOfRoom(const double[], int, int);
+int indexTheDay(char[]);
+void takeOffEscapeSequence(char[]);
+
+
 int main(void) {
 
-
+	const double valueByDay[6] = { 137.50, 138.25, 130.50, 150, 150, 162.50 };
+	char guestName[kStringSize] = "";
+	char checkInDay[kStringSize] = "";
+	char checkOutDay[kStringSize] = "";
+	int checkInIndex = 0;
+	int checkOutIndex = 0;
+	double costPerPerson = 0;
+	double grandTotal = 0;
 
 
 
 }
+
+double calculateCostOfRoom(const double[], int, int) {
+
+
+	return 0;
+
+}
+
+int indexTheDay(char[]) {
+
+	return 0;
+}
+
+void takeOffEscapeSequence(char[]);
