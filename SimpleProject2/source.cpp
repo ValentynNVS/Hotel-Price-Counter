@@ -59,6 +59,32 @@ int main(void) {
 			printf("This person is missing the meeting. Moving on to next guest...\n\n");
 			continue;
 		}
+		printf("Enter check-out day: ");
+		fgets(checkOutDay, kStringSize, stdin);
+		takeOffEscapeSequence(checkOutDay);
+		checkOutIndex = indexTheDay(checkOutDay);
+		if (checkOutIndex == -1) {
+			printf("Invalid check-out day. Moving on to next guest...\n\n");
+			continue;
+		}
+		else if (checkOutIndex < 4) {
+			printf("This person is missing the meeting. Moving on to next guest...\n\n");
+			continue;
+		}
+		else if (checkOutIndex == checkInIndex) {
+			printf("Invalid length of stay.Moving on to next guest...\n\n");
+			continue;
+			/*if checkin and check out day are thursday - shows an error*/
+		}
+
+		costPerPerson = calculateCostOfRoom(valueByDay, checkInIndex, checkOutIndex);
+		printf("The total room cost for %s is %.2f\n\n", guestName, costPerPerson);
+		grandTotal += costPerPerson;
+
+	}
+
+	printf("Grand total: %.2f", grandTotal);
+	return 0;
 
 
 }
