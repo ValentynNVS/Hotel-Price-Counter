@@ -31,7 +31,34 @@ int main(void) {
 	int checkOutIndex = 0;
 	double costPerPerson = 0;
 	double grandTotal = 0;
-
+	/*initialized all of the variables that are used in main fucntion and set their values
+	to 0 to prevent unexpected behaviour*/
+	for (int i = 0; i < kNumberOfPeople; i++) {
+		/*This for loop does 4 repetitions, and ask the user his name, check-in,checkout days and
+		and also calculates total room cost for 1 person and grand total for everyone.*/
+		printf("Enter Name: ");
+		fgets(guestName, kStringSize, stdin);
+		if (guestName[0] == '\n') {
+			printf("Invalid name entry. Moving on to next guest.\n\n");
+			continue;
+			/*checks if user wrote his name and it is not empty*/
+		}
+		else {
+			takeOffEscapeSequence(guestName);
+		}
+		printf("Enter check-in day: ");
+		fgets(checkInDay, kStringSize, stdin);
+		takeOffEscapeSequence(checkInDay);
+		checkInIndex = indexTheDay(checkInDay);
+		if (checkInIndex == -1) {
+			printf("Invalid check-in day. Moving on to next guest...\n\n");
+			continue;
+			/*checks if the check in day matches any of the results and gives an error in case it doesn't*/
+		}
+		else if (checkInIndex > 4) {
+			printf("This person is missing the meeting. Moving on to next guest...\n\n");
+			continue;
+		}
 
 
 }
