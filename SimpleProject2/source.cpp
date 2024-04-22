@@ -114,7 +114,16 @@ double calculateCostOfRoom(const double[], int, int) {
 // RETURNS : return kErrorValue: in case that string enter by the user does not match anything
 //			 return 1,2,3,4,5,6: respectivly to the weekdays
 //
-int indexTheDay(char[]) {
+int indexTheDay(char dayEntered[]) {
+
+	if (strcmp(dayEntered, "sun") == 0) return 0;
+	else if (strcmp(dayEntered, "mon") == 0) return 1;
+	else if (strcmp(dayEntered, "tue") == 0) return 2;
+	else if (strcmp(dayEntered, "wed") == 0) return 3;
+	else if (strcmp(dayEntered, "thu") == 0) return 4;
+	else if (strcmp(dayEntered, "fri") == 0) return 5;
+	else if (strcmp(dayEntered, "sat") == 0) return 6;
+	return kErrorValue;
 
 	return 0;
 }
