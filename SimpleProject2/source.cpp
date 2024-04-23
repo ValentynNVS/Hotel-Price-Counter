@@ -97,8 +97,12 @@ int main(void) {
 //				int checkOut: check out day as an index of an array
 // RETURNS : return costOfRoom: returns the cost of living for a 1 person in a period that he stayed.
 //
-double calculateCostOfRoom(const double[], int, int) {
-
+double calculateCostOfRoom(const double roomRates[], int checkIn, int checkOut) {
+	double costOfRoom = 0;
+	for (int i = checkIn; i < checkOut; i++) {
+		costOfRoom += roomRates[i];
+	}
+	return costOfRoom;
 
 	return 0;
 
