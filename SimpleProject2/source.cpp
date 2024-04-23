@@ -140,8 +140,12 @@ int indexTheDay(char dayEntered[]) {
 // PARAMETERS : char userInput[]: string that needs to be modified
 // RETURNS : void: does not return anything
 //
-void takeOffEscapeSequence(char[]) {
+void takeOffEscapeSequence(char userInput[]) {
 
-
+	size_t lenghtOfArray = strlen(userInput);
+	if (lenghtOfArray > 0 && userInput[lenghtOfArray - 1] == '\n') {
+		userInput[lenghtOfArray - 1] = '\0';
+	}
+	/*check if the string is not empty and sets the value of the \n to the ascii value 0*/
 
 }
