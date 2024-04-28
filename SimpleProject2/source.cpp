@@ -100,14 +100,14 @@ int main(void) {
 // RETURNS : return costOfRoom: returns the cost of living for a 1 person in a period that he stayed.
 //
 double calculateCostOfRoom(const double roomRates[], int checkIn, int checkOut) {
+
 	double costOfRoom = 0;
 	for (int i = checkIn; i < checkOut; i++) {
 		costOfRoom += roomRates[i];
 	}
+
+
 	return costOfRoom;
-
-	return 0;
-
 }
 
 
@@ -129,9 +129,10 @@ int indexTheDay(char dayEntered[]) {
 	else if (strcmp(dayEntered, "thu") == 0) return 4;
 	else if (strcmp(dayEntered, "fri") == 0) return 5;
 	else if (strcmp(dayEntered, "sat") == 0) return 6;
+
+
 	return kErrorValue;
 
-	return 0;
 }
 
 
