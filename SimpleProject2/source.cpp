@@ -70,8 +70,10 @@ int main(void) {
 			continue;
 		}
 		else if (checkOutIndex < 4) {
+
 			printf("This person is missing the meeting. Moving on to next guest...\n\n");
 			continue;
+
 		}
 		else if (checkOutIndex == checkInIndex) {
 
