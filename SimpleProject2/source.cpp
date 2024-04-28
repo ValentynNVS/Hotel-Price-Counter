@@ -66,8 +66,10 @@ int main(void) {
 		takeOffEscapeSequence(checkOutDay);
 		checkOutIndex = indexTheDay(checkOutDay);
 		if (checkOutIndex == -1) {
+
 			printf("Invalid check-out day. Moving on to next guest...\n\n");
 			continue;
+
 		}
 		else if (checkOutIndex < 4) {
 
