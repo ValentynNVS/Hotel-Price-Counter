@@ -36,6 +36,7 @@ int main(void) {
 
 
 	for (int i = 0; i < kNumberOfPeople; i++) {
+
 		/*This for loop does 4 repetitions, and ask the user his name, check-in,checkout days and
 		and also calculates total room cost for 1 person and grand total for everyone.*/
 		printf("Enter Name: ");
