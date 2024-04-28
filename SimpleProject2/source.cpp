@@ -74,9 +74,11 @@ int main(void) {
 			continue;
 		}
 		else if (checkOutIndex == checkInIndex) {
+
 			printf("Invalid length of stay.Moving on to next guest...\n\n");
 			continue;
 			/*if checkin and check out day are thursday - shows an error*/
+
 		}
 
 		costPerPerson = calculateCostOfRoom(valueByDay, checkInIndex, checkOutIndex);
@@ -130,7 +132,7 @@ int indexTheDay(char dayEntered[]) {
 	else if (strcmp(dayEntered, "fri") == 0) return 5;
 	else if (strcmp(dayEntered, "sat") == 0) return 6;
 
-
+	/*if non of the conditions were met*/
 	return kErrorValue;
 
 }
