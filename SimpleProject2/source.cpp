@@ -23,6 +23,8 @@ void takeOffEscapeSequence(char[]);
 
 int main(void) {
 
+	/*initialized all of the variables that are used in main fucntion and set their values
+	to 0 to prevent unexpected behaviour*/
 	const double valueByDay[6] = { 137.50, 138.25, 130.50, 150, 150, 162.50 };
 	char guestName[kStringSize] = "";
 	char checkInDay[kStringSize] = "";
@@ -31,8 +33,8 @@ int main(void) {
 	int checkOutIndex = 0;
 	double costPerPerson = 0;
 	double grandTotal = 0;
-	/*initialized all of the variables that are used in main fucntion and set their values
-	to 0 to prevent unexpected behaviour*/
+
+
 	for (int i = 0; i < kNumberOfPeople; i++) {
 		/*This for loop does 4 repetitions, and ask the user his name, check-in,checkout days and
 		and also calculates total room cost for 1 person and grand total for everyone.*/
