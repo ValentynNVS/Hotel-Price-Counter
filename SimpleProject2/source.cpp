@@ -41,6 +41,7 @@ int main(void) {
 		and also calculates total room cost for 1 person and grand total for everyone.*/
 		printf("Enter Name: ");
 		fgets(guestName, kStringSize, stdin);
+
 		if (guestName[0] == '\n') {
 			printf("Invalid name entry. Moving on to next guest.\n\n");
 			continue;
@@ -49,10 +50,12 @@ int main(void) {
 		else {
 			takeOffEscapeSequence(guestName);
 		}
+
 		printf("Enter check-in day: ");
 		fgets(checkInDay, kStringSize, stdin);
 		takeOffEscapeSequence(checkInDay);
 		checkInIndex = indexTheDay(checkInDay);
+
 		if (checkInIndex == -1) {
 			printf("Invalid check-in day. Moving on to next guest...\n\n");
 			continue;
