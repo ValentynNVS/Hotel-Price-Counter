@@ -65,10 +65,12 @@ int main(void) {
 			printf("This person is missing the meeting. Moving on to next guest...\n\n");
 			continue;
 		}
+
 		printf("Enter check-out day: ");
 		fgets(checkOutDay, kStringSize, stdin);
 		takeOffEscapeSequence(checkOutDay);
 		checkOutIndex = indexTheDay(checkOutDay);
+
 		if (checkOutIndex == -1) {
 
 			printf("Invalid check-out day. Moving on to next guest...\n\n");
