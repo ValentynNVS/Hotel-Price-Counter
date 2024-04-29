@@ -129,8 +129,8 @@ double calculateCostOfRoom(const double roomRates[], int checkIn, int checkOut) 
 
 	}
 
-
 	return costOfRoom;
+
 }
 
 
@@ -153,7 +153,7 @@ int indexTheDay(char dayEntered[]) {
 	else if (strcmp(dayEntered, "fri") == 0) return 5;
 	else if (strcmp(dayEntered, "sat") == 0) return 6;
 
-	/*if non of the conditions were met*/
+	/*If non of the conditions were met*/
 	return kErrorValue;
 
 }
@@ -169,9 +169,12 @@ int indexTheDay(char dayEntered[]) {
 void takeOffEscapeSequence(char userInput[]) {
 
 	size_t lenghtOfArray = strlen(userInput);
+
 	if (lenghtOfArray > 0 && userInput[lenghtOfArray - 1] == '\n') {
+
 		userInput[lenghtOfArray - 1] = '\0';
+
 	}
-	/*check if the string is not empty and sets the value of the \n to the ascii value 0*/
+	/*Checks if the string is not empty and sets the value of the \n to the ascii value 0*/
 
 }
