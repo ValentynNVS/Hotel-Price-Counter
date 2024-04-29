@@ -61,9 +61,11 @@ int main(void) {
 		checkInIndex = indexTheDay(checkInDay);
 
 		if (checkInIndex == -1) {
+
 			printf("Invalid check-in day. Moving on to next guest...\n\n");
 			continue;
 			/*checks if the check in day matches any of the results and gives an error in case it doesn't*/
+
 		}
 		else if (checkInIndex > 4) {
 			printf("This person is missing the meeting. Moving on to next guest...\n\n");
