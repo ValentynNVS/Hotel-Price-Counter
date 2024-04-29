@@ -99,6 +99,7 @@ int main(void) {
 
 		}
 
+		/*Call functions to calculate the cost and print the amount*/
 		costPerPerson = calculateCostOfRoom(valueByDay, checkInIndex, checkOutIndex);
 		printf("The total room cost for %s is %.2f\n\n", guestName, costPerPerson);
 		grandTotal += costPerPerson;
