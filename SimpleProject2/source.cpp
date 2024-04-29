@@ -43,9 +43,11 @@ int main(void) {
 		fgets(guestName, kStringSize, stdin);
 
 		if (guestName[0] == '\n') {
+
 			printf("Invalid name entry. Moving on to next guest.\n\n");
 			continue;
 			/*checks if user wrote his name and it is not empty*/
+
 		}
 		else {
 			takeOffEscapeSequence(guestName);
