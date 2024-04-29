@@ -106,9 +106,9 @@ int main(void) {
 
 	}
 
+	/*Print the total of all the people up to 2 desmo points*/
 	printf("Grand total: %.2f", grandTotal);
 	return 0;
-
 
 }
 
