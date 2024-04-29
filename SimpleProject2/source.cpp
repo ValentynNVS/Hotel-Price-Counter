@@ -50,7 +50,9 @@ int main(void) {
 
 		}
 		else {
+
 			takeOffEscapeSequence(guestName);
+
 		}
 
 		printf("Enter check-in day: ");
