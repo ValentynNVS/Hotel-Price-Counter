@@ -1,1 +1,1 @@
-# SimpleProject2
+# Hotel price counter
