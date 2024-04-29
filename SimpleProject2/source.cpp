@@ -68,8 +68,10 @@ int main(void) {
 
 		}
 		else if (checkInIndex > 4) {
+
 			printf("This person is missing the meeting. Moving on to next guest...\n\n");
 			continue;
+
 		}
 
 		printf("Enter check-out day: ");
