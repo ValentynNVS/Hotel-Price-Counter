@@ -124,7 +124,9 @@ double calculateCostOfRoom(const double roomRates[], int checkIn, int checkOut) 
 
 	double costOfRoom = 0;
 	for (int i = checkIn; i < checkOut; i++) {
+
 		costOfRoom += roomRates[i];
+
 	}
 
 
